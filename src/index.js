@@ -16,10 +16,11 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 import ReactDom from "react-dom/client";
-import { Omkar } from "./Omkar";
+// import { Omkar } from "./Omkar";
+import Props from "./Props";
 
 const root=ReactDom.createRoot(document.getElementById('root'));
 
 root.render(
-  <Omkar/>
+  <Props/>
 )
