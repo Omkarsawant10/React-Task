@@ -1,7 +1,5 @@
 const Props = () => (
     <>
-    
-
     <Greeting/>
     <ProductDisplay/>
     <UserProfile/>
