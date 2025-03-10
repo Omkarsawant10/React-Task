@@ -1,12 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Test } from './Test';
+import { ProductCard } from './components/ProductCard';
+import { products } from './data';
+
 
 function App() {
+  console.log(products)
   return (
     <div className="App">
-      <Test/>
-      <Test/>
+       {
+        products.map((curr)=>{
+          return(
+            <ProductCard name={curr.name} category={curr.category} price={curr.price} stock={curr.stock}/>
+          )
+        })
+       }
     </div>
   );
 }
